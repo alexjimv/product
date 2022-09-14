@@ -10,8 +10,9 @@ public void product() {
  List <array> mockDb = new List<array> 
  List<String> actual = Arrays.asList("GR", "12AEW", "433A");
  List<String> expected = Arrays.asList("GR", "12AE2", "433A");
- assertThat(actual, is(expected));
- return true;
+ if (assertThat(actual, is(expected));){
+ return true;}
+else{ return false;}
  }
 
 @After
